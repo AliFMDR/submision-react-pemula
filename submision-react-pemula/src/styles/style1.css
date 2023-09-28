@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Mono:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #364F6B;
+}
+ 
+textarea{
+  width: 100%;
+  min-height: 140px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+.note-app__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+  border-bottom: 1px solid #aaa;
+}
+ 
+.note-app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+ 
+}
+
+.note-item {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  border: 1px dashed black;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.note-app__header h1,h2 {
+  margin: 8px 0;
+  flex: 1;
+  color: white;
+}
+
+.note-app  h1 {
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 32px;
+  color: #F5F5F5;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+
+}
+ 
+.note-item {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  border: 1px dashed black;
+  padding: 16px;
+  border-radius: 25px;
+  background-color: #3F4E4F;
+ 
+}
+
+.note-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(min-content, max-content);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+ 
+.note-item__image img {
+  width: 64px;
+  border-radius: 50%;
+}
+ 
+.note-item_body {
+  margin-left: 8px;
+  padding-left: 8px;
+  border-left: 1px solid #aaa;
+  flex: 1;
+}
+.note-input_date {
+  padding-top: 50px;
+  margin: 100px;
+  border-left: 1px solid #aaa;
+  flex: 1;
+}
+ 
+.note-item_title {
+  padding: 4px 0;
+  color: #F5F5F5;
+}
+ 
+.note-item_username {
+  font-weight: lighter;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 25px;
+  margin-left: 8px;
+  text-align: justify;
+  color: #3FC1C9;
+}
+
+.note-item_createdAt{
+  color: #FC5185;
+  font-weight: lighter;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  margin-right: 25px;
+  text-align: justify;
+}
+ 
+.note-item__delete {
+  padding: 8px;
+  margin-top: 9px;
+  font-size: 18px;
+  background-color: orangered;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.note-input {
+  border: 1px dashed black;
+  padding: 16px;
+  margin: 14px 0;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  background-color: #3F4E4F;
+  display: flex;
+}
+.note-input_isi{
+height: 126px;
+width: 733px;
+background-color: transparent;
+font-family: 'Roboto Mono', monospace;
+font-size: medium;
+border-radius: 10px;
+}
+.note-input input {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  padding: 8px;
+  margin: 12px 0;
+  font-family: 'Roboto Mono', monospace;
+  background-color: transparent;
+}
+ 
+.note-input button {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 10px;
+  background-color: #3FC1C9;
+  color: white  ;
+}
+
+
+
